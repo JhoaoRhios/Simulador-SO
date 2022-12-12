@@ -1,0 +1,138 @@
+<!-- -TRABALHO DESTINADO A DISCIPLINA DE SISTEMAS OPERACIONAIS
+-COMPOSTO PELO GRUPO: JOÃO RIOS, JOSÉ PEDREIRA, ALCIDES, EDUARDO 
+-INFELIZMENTE O CÓDIGO NÃO ESTÁ FINALIZADO, FALTARAM PARTES FUNDAMENTAIS DE RECEPÇÃO DE DADOS
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="./js/actions.js"></script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRABALHO SO</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>TRABALHO SO - ESCALONAMENTO</h1>
+        <blockquote>ESOLHA O MÉTODO DE ENDEREÇAMENTO:</blockquote>
+    </header>
+    <div class="entradas">
+        <div class="container shadow p-4 mb-5">
+            <div class="form-floating mb-3">
+                <label for="algoritimo">Escalonamento</label>
+                <select class="form-select" id="algoritimo">
+                    <option value="FIFO" selected>FIFO</option>
+                    <option value="SJF">SJF</option>
+                    <option value="Round Robin">Round Robin</option>
+                    <option value="EDF">EDF</option>
+                </select>
+            </div>
+            <div class="form-floating mb-3">
+                 <label for="algoritimoMemoria">Memória</label>
+               <select class="form-select" id="algoritimoMemoria">
+                    <option value="FIFO" selected>FIFO</option>
+                    <option value="LRU">LRU</option>
+                </select>
+            </div>
+            
+            <div class="form-floating mb-3">
+                <label for="quantum">Quantum</label>               
+                <input name="quantum" type="number" class="form-control" id="quantum">
+            </div>
+            <div class="form-floating mb-3">
+                <label for="sobrecarga">Sobrecarga</label>
+
+                <input name="sobrecarga" type="number" class="form-control" id="sobrecarga">
+            </div>
+
+    <div class="container shadow p-4">
+            
+            <div class="form-floating mb-3">
+                <nav class="entradas">
+                    <label for="name">Número de Processos:</label><input  type="number" min="0" max="100" name="NumP" id="Nprocessos"> 
+                 </nav>
+            </div>
+                           <button onclick="entradas()">Definir Valores</button>
+          
+    </div>
+ 
+        <form  action="" method='get'>
+            <div id="processcorr">
+            </div>
+        </form>
+    <section class = main2>
+        
+                <button onclick="entradas2()">Carregar Processos</button>
+
+    </section>
+    <section class = main>
+        
+        <button onclick="blueSquare()">Iniciar Simulação Escalonamento</button>
+
+</section>
+<section class = main2>
+        
+    <button onclick="entradas3()">Visualizar Memória</button>
+
+</section>
+<section class = main2>
+    <form  action="||" method='get'>
+    <main class="main2">
+
+            <div id="objn2">
+
+         </div>
+        
+   </main>
+
+    </form>     
+</section>
+
+<section class = main2>
+        <form  action="|" method='get'>
+        <main class="main2">
+
+                <div id="objn">
+
+             </div>
+            
+       </main>
+
+        </form>     
+</section>
+
+
+
+ 
+      <!--   <nav class="actions">
+
+            <button class="btn" onclick="blueSquare()">FIFO</button>
+            <button class="btn" onclick="redSquare()">SJF</button>
+            <button class="btn" onclick="greenSquare()">RR</button>
+            <button class="btn" onclick="purpleSquare()">EDF</button>
+            <button class="btn" onclick="allSquare()">TODOS</button>
+        </nav> -->
+
+
+       <!--  <section class="stage2">
+            <label for="MEMORIA">MEMÓRIA</label>
+    <ul class="flex-container">
+  <li class="flex-item">1</li>
+  <li class="flex-item">2</li>
+</ul>
+ </section> -->
+
+    <footer>
+        <address>
+            Este material é referente ao trabalhoda disciplina de SO. 
+        </address>
+        <address>
+            Criação e execução:  Equipe em questão.</a>
+        </address>
+    </footer>
+
+</body>
+</html>
