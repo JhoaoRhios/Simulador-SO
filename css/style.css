@@ -1,0 +1,175 @@
+@import url('./reset.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    /*background: linear-gradient(black, darkturquoise);*/
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    padding: 1rem;
+    background-color: black;
+    color: rgb(0, 47, 255);
+}
+
+blockquote {
+    font-size: 2rem;
+    margin: 1.5rem 1rem;
+    padding: 1rem;
+    text-align: left;
+    border: 2px solid black;
+    border-radius: 1.4rem;
+    background-color: rgb(128, 137, 175);
+}
+
+footer {
+    margin-top: 2rem;
+    padding: 1rem;
+    border-top: 2px solid black;
+    display: grid;
+    justify-content: center;
+    background-image: linear-gradient(rgb(0, 110, 255), white);
+}
+footer2 {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-top: 2px solid black;
+    display: grid;
+    justify-content:center;
+    background-image: linear-gradient(rgb(60, 81, 105), white);
+}
+
+address {
+    margin: 0.5rem;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+/*Configurações do exercício*/
+
+.main {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+.main2 {
+    display:grid;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.entradas {
+    position:relative;
+background-color: aliceblue;}
+.transp {
+    position:relative;
+background-color: black;}
+.stage {
+    position: relative;
+    background-color: rgb(116, 70, 70); 
+   background-blend-mode: darken;
+   width: 1200px;
+    height: 260px;
+}
+.stage2 {
+    position: relative;
+    background-color: rgb(92, 165, 92); 
+   background-blend-mode: darken;
+   width: 1200px;
+    height: 60px;    
+}
+
+.flex-container {
+    /* We first create a flex layout context */
+    display: flex;
+    
+    /* Then we define the flow direction 
+       and if we allow the items to wrap 
+     * Remember this is the same as:
+     * flex-direction: row;
+     * flex-wrap: wrap;
+     */
+    flex-flow: row wrap;
+    
+    /* Then we define how is distributed the remaining space */
+    justify-content:first baseline;
+    padding: 0;
+    margin: 1;
+    list-style: none;
+  }
+  
+  .flex-item {
+    background: tomato;
+    border: 3px solid rgb(0, 0, 0);
+    padding: 2px;
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    line-height: 40px;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+  }
+
+.OB {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(1, 1, 27);
+}
+
+.obj1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 40px;
+    height: 40px;
+    background-color: blue;
+    border: 3px solid white;
+    
+}
+
+.obj2 {
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    width: 40px;
+    height: 40px;
+    background-color: red;
+}
+
+.obj3 {
+    position: absolute;
+    bottom: 140px;
+    left: 0px;
+    width: 40px;
+    height: 40px;
+    background-color: green;
+}
+
+.obj4 {
+    position: absolute;
+    bottom: 100px;
+    left: 0px;
+    width: 40px;
+    height: 40px;
+    background-color: purple;
+}
+
+.actions {
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn {
+    width: 18%;
+}
